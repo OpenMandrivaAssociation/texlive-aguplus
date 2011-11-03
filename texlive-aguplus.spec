@@ -1,3 +1,9 @@
+# revision 17156
+# category Package
+# catalog-ctan /macros/latex/contrib/aguplus
+# catalog-date 2010-02-24 21:28:09 +0100
+# catalog-license lppl
+# catalog-version 1.6b
 Name:		texlive-aguplus
 Version:	1.6b
 Release:	1
@@ -53,6 +59,7 @@ official distribution.
 %doc %{_texmfdistdir}/doc/latex/aguplus/geophys.tex
 %doc %{_texmfdistdir}/doc/latex/aguplus/sample.bib
 %doc %{_texmfdistdir}/doc/latex/aguplus/samplus.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -63,3 +70,5 @@ official distribution.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
