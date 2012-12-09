@@ -60,3 +60,18 @@ official distribution.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.6b-2
++ Revision: 749151
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.6b-1
++ Revision: 717804
+- texlive-aguplus
+- texlive-aguplus
+- texlive-aguplus
+- texlive-aguplus
+- texlive-aguplus
+
