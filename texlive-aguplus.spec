@@ -6,7 +6,7 @@
 # catalog-version 1.6b
 Name:		texlive-aguplus
 Version:	1.6b
-Release:	3
+Release:	4
 Summary:	Styles for American Geophysical Union
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/aguplus
