@@ -1,18 +1,12 @@
-# revision 17156
-# category Package
-# catalog-ctan /macros/latex/contrib/aguplus
-# catalog-date 2010-02-24 21:28:09 +0100
-# catalog-license lppl
-# catalog-version 1.6b
 Name:		texlive-aguplus
-Version:	1.6b
-Release:	11
+Version:	17156
+Release:	1
 Summary:	Styles for American Geophysical Union
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/aguplus
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aguplus.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aguplus.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aguplus.r17156.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/aguplus.doc.r17156.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ author of aguplus recommends that users switch to using the
 official distribution.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -53,25 +47,10 @@ official distribution.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.6b-2
-+ Revision: 749151
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.6b-1
-+ Revision: 717804
-- texlive-aguplus
-- texlive-aguplus
-- texlive-aguplus
-- texlive-aguplus
-- texlive-aguplus
-
