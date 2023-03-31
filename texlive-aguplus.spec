@@ -1,6 +1,6 @@
 Name:		texlive-aguplus
 Version:	17156
-Release:	1
+Release:	2
 Summary:	Styles for American Geophysical Union
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/aguplus
